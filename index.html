@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Northview College Events</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="logo-section">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHFbxNxjFVxj8W7uj65k2ljg1ESs0IBmZtIQ&s" class="logo">
+        <h1>Northview College</h1>
+    </div>
+
+    <div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Events</a>
+            <a href="#">Admissions</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </div>
+
+</header>
+
+<div class="search-area">
+    <input type="text" id="searchInput" placeholder="Search by title or date...">
+</div>
+
+    <!-- ================= FILTERS ================= -->
+    <section class="filters">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Sports">Sports</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Lecture">Lecture</option>
+        </select>
+
+        <select id="dateFilter">
+            <option value="all">All Dates</option>
+            <option value="today">Today</option>
+            <option value="week">This Week</option>
+        </select>
+
+    </section>
+
+
+    <!-- ================= EVENTS ================= -->
+    <section id="eventsContainer" class="events"></section>
+
+
+    <!-- ================= PAGINATION ================= -->
+    <div class="pagination">
+        <button id="prevBtn">Prev</button>
+        <span id="pageInfo"></span>
+        <button id="nextBtn">Next</button>
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="socials">
+            <a href="#">🔗 LinkedIn</a>
+            <a href="#">📘 Facebook</a>
+            <a href="#">🐦 Twitter</a>
+        </div>
+
+        <p id="Contact">📞 +91 9876543210 | ✉ northview@college.education</p>
+    </footer>
+
+</body>
+</html>
